@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏠 House Price Prediction</h1>
+        <form id="predictionForm">
+            <input type="number" id="area" placeholder="Area (sq ft)" required>
+            <input type="number" id="bedrooms" placeholder="Bedrooms" required>
+            <input type="number" id="bathrooms" placeholder="Bathrooms" required>
+            <input type="number" id="stories" placeholder="Stories" required>
+            <input type="number" id="parking" placeholder="Parking" required>
+            <label>Main Road</label>
+            <select id="mainroad">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <label>Guest Room</label>
+            <select id="guestroom">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <label>Basement</label>
+            <select id="basement">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label>Hot Water Heating</label>
+            <select id="hotwaterheating">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label>Air Conditioning</label>
+            <select id="airconditioning">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <label>Furnishing Status</label>
+            <select id="furnishingstatus">
+                <option value="0">Unfurnished</option>
+                <option value="1">Semi-Furnished</option>
+                <option value="2">Furnished</option>
+            </select>
+            <button type="submit">
+                Predict Price
+            </button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
