@@ -2,7 +2,7 @@ const form = document.getElementById("predictionForm");
 const result = document.getElementById("result");
 
 const API_URL =
-    "https://sr8wh1pkke.execute-api.us-east-1.amazonaws.com/prod/predict";
+    "Your_API_INVOKE_URL/predict";
 
 form.addEventListener("submit", async function (event) {
 
