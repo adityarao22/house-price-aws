@@ -67,7 +67,7 @@ print("\nTraining data:", X_train.shape)
 print("Testing data:", X_test.shape)
 
 from xgboost import XGBRegressor
-from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score,mean_absolute_percentage_error
 import numpy as np
 
 # Create XGBoost model
@@ -97,3 +97,4 @@ print("MAE :", mae)
 print("RMSE:", rmse)
 print("R2 Score:", r2)
 print("\nAccuracy  of the model is : ",r2*100, "%")
+print("\n Mean Absolute Percentage Error (MAPE): ", mean_absolute_percentage_error(y_test,y_pred)*100,"%")
